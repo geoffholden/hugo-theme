@@ -9,6 +9,6 @@
   </ul>
   <br><br>
   {{ with .Site.Params.disclaimer }}
-  <p>{{ . }}</p>
+  <p>{{ . | markdownify }}</p>
   {{ end }}
 </aside>
